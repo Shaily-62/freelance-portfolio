@@ -69,6 +69,7 @@ export default function Contact() {
     // Form details
     data.append("name", formData.name);
     data.append("email", formData.email);
+    data.append("phone", formData.phone || "N/A");
     data.append("company", formData.company || "N/A");
     data.append("project_type", formData.projectType);
     data.append("budget", formData.budget);
